@@ -1,0 +1,310 @@
+* {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #F6F5F4;
+}
+
+main {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0F131A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-align: center;
+}
+
+h2 {
+    margin: 16px 0px;
+}
+
+img {
+    border-radius: 8px
+}
+
+span {
+    font-weight: 600;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(246, 245, 244);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex center;
+    align-content: center;
+    text-align: center;
+    gap: 4px;
+
+
+}
+
+nav ul a:hover {
+    color: #FF6C3F;
+}
+
+nav .logo {
+    width: 50px;
+}
+
+.button {
+    border-radius: 25.899px;
+    background: rgb(255, 108, 64);
+    padding: 8px;
+}
+
+.button:hover {
+    background-color: rgb(255, 108, 63, 0.5);
+    outline: 1px solid #FF6C3F;
+    color: #FF6C3F;
+
+}
+
+.button-2:hover {
+    background-color: rgb(163, 167, 142, 0.3);
+    outline: 1px solid #A3A78E;
+}
+
+.hero-inicio {
+    display: flex;
+    width: 100%;
+    height: 340px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../images/perro_acostado.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-inicio .articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    gap: 16px;
+}
+
+.seccion-datos {
+    text-align: center;
+    padding: 24px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos {
+    padding: 16px;
+}
+
+.datos h5 {
+    font-family: "Abril Fatface";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.contenedor {
+    padding: 16px;
+    border-radius: 8px;
+    background: #EAEAE9;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.ilustracion {
+    box-sizing: border-box;
+    width: 60vw;
+}
+
+img {
+    width: 100%;
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+}
+
+.botones {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.button-2 {
+    border-radius: 25.899px;
+    background: #A3A78E;
+    padding: 8px;
+}
+
+.banner {
+    width: 100%;
+    padding: 24px;
+    background-color: #D9D9D9;
+    text-align: center;
+}
+
+.banner a {
+    font-weight: 700;
+}
+
+.banner a:hover {
+    color: #FF6C3F;
+    transform: scale(1.1);
+}
+
+footer {
+    background: #C0BEAF;
+    display: flex;
+    width: 100%;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .logo {
+    width: 100px;
+}
+
+.footer-column {
+    text-align: center;
+    padding: 16px;
+    font-weight: 600;
+}
+
+
+.links-utilidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 16px;
+    text-align: center;
+}
+
+/* Estilos tablet horizontal y escritorio */
+
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    nav .logo {
+        width: 80px;
+    }
+
+    .hero-inicio {
+        display: flex;
+        height: 420px;
+        padding: 24px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-inicio .articulo {
+        width: 60%;
+    }
+
+    .seccion-datos {
+        flex-direction: row;
+    }
+
+
+    .contenedor {
+        flex-direction: row;
+    }
+
+    #derecha {
+        flex-direction: row-reverse;
+    }
+
+
+    div.column {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    div.galeri {
+        margin: 10px 20px;
+        box-shadow: 0 4px 8px rgb(10, 11, 12), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        float: right;
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    div.galeri img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.pie {
+        text-align: center;
+        text-shadow: 2px 2px 5px orangered;
+        padding: 10px;
+    }
+
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .footer-column {
+        text-align: left;
+    }
+
+}
