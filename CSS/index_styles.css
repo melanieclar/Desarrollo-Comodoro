@@ -1,10 +1,8 @@
 * {
-    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-}
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -62,8 +60,6 @@ nav ul {
     align-content: center;
     text-align: center;
     gap: 4px;
-
-
 }
 
 nav ul a:hover {
@@ -84,7 +80,6 @@ nav .logo {
     background-color: rgb(255, 108, 63, 0.5);
     outline: 1px solid #FF6C3F;
     color: #FF6C3F;
-
 }
 
 .button-2:hover {
