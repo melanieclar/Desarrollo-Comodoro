@@ -10,7 +10,6 @@ body {
 }
 
 main {
-    margin: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +34,13 @@ h2 {
     margin: 16px 0px;
 }
 
+h4{
+    text-align: center;
+    padding: 8px;
+}
+
 img {
+    width: 100%;
     border-radius: 8px
 }
 
@@ -72,22 +77,33 @@ nav .logo {
 
 .button {
     border-radius: 25.899px;
-    background: rgb(255, 108, 64);
     padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button:hover {
+.bg_orange{
+    background: rgb(255, 108, 64);
+}
+
+.bg_grey{
+    background: #A3A78E;
+}
+
+.bg_orange:hover {
     background-color: rgb(255, 108, 63, 0.5);
     outline: 1px solid #FF6C3F;
     color: #FF6C3F;
 }
 
-.button-2:hover {
+.bg_grey:hover {
     background-color: rgb(163, 167, 142, 0.3);
     outline: 1px solid #A3A78E;
 }
 
 .hero-inicio {
+    margin-bottom: 16px;
     display: flex;
     width: 100%;
     height: 340px;
@@ -131,6 +147,7 @@ nav .logo {
 }
 
 .contenedor {
+    margin: 16px 32px;
     padding: 16px;
     border-radius: 8px;
     background: #EAEAE9;
@@ -146,10 +163,6 @@ nav .logo {
     width: 60vw;
 }
 
-img {
-    width: 100%;
-}
-
 .articulo {
     display: flex;
     flex-direction: column;
@@ -162,12 +175,6 @@ img {
     display: flex;
     flex-direction: row;
     gap: 8px;
-}
-
-.button-2 {
-    border-radius: 25.899px;
-    background: #A3A78E;
-    padding: 8px;
 }
 
 .banner {
