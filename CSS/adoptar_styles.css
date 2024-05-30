@@ -141,6 +141,24 @@ img{
     padding: 24px;
 }
 
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+
+}
+
 
 
 
