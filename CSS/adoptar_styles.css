@@ -1,10 +1,9 @@
-* {
-    * {
+ * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-}
+
 ul {
     list-style-type: none;
 }
@@ -44,8 +43,6 @@ nav ul {
     align-content: center;
     text-align: center;
     gap: 4px;
-
-
 }
 
 nav ul a:hover {
@@ -58,19 +55,20 @@ nav .logo {
 
 .button {
     border-radius: 25.899px;
-    background: rgb(255, 108, 64);
     padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button:hover {
+.bg_orange{
+    background: rgb(255, 108, 64);
+}
+
+.bg_orange:hover {
     background-color: rgb(255, 108, 63, 0.5);
     outline: 1px solid #FF6C3F;
     color: #FF6C3F;
-
-}
-.button-2:hover {
-    background-color: rgb(163, 167, 142, 0.3);
-    outline: 1px solid #A3A78E;
 }
 
 body {
@@ -114,7 +112,7 @@ h2{
     justify-content: space-around;
     gap: 30px;
     text-align:start;
-   margin: 10px 10px;
+    margin: 10px 10px;
 }
 .tips{
     padding: 16px;
