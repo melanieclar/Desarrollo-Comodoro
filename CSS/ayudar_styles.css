@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+list-style-type: none;
+}
+
+a {
+text-decoration: none;
+color: #0F131A;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.32px;
+text-align: center;
+}
+img {
+border-radius: 8px
+}
+
+span {
+font-weight: 600;
+}
+
+nav {
+width: 100%;
+height: auto;
+padding: 4px 12px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: rgba(246, 245, 244);
+}
+
+nav ul {
+display: flex;
+flex-direction: column;
+justify-content: flex center;
+align-content: center;
+text-align: center;
+gap: 4px;
+}
+
+nav ul a:hover {
+color: #FF6C3F;
+}
+
+nav .logo {
+width: 50px;
+}
+
+.button {
+border-radius: 25.899px;
+padding: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.bg_orange{
+background: rgb(255, 108, 64);
+}
+
+.bg_orange:hover {
+background-color: rgb(255, 108, 63, 0.5);
+outline: 1px solid #FF6C3F;
+color: #FF6C3F;
+}
+
+body {
+font-family: "Montserrat", sans-serif;
+background-color: #F6F5F4;
+}
+main {
+margin: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.title{
+color: black;
+background-color: #F6F5F4;
+text-align: center;
+margin: 10px 10px;
+}
+.title{
+width: 100%;
+height: 300px;
+color: white;
+background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/catdog25.jpg);
+background-size: cover;
+background-position: center;
+padding: 32px;
+display: flex;
+align-items: flex-end;
+color: #F6F5F4;
+}
+h2{
+background-color: #ffffffb7;
+text-align: center;
+margin: 10px 10px;
+}
+.hogardetransito{
+background-color: #F6F5F4;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 30px;
+text-align:start;
+margin: 10px 10px;
+}
+.donacion{
+padding: 16px;
+border-radius: 8px;
+background: #F6F5F4;
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+gap: 8px;
+}
+h2{
+margin: 20px;
+}
+
+img{
+width: 100%;
+}
+
+footer {
+background: #C0BEAF;
+display: flex;
+width: 100%;
+padding: 24px;
+flex-direction: column;
+align-items: center;
+}
+
+.footer-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+footer .logo {
+width: 100px;
+}
+
+.footer-column {
+text-align: center;
+padding: 16px;
+font-weight: 600;
+}
+
+
+.links-utilidad {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+.copyright {
+margin-top: 16px;
+text-align: center;
+}
+
+@media (min-width: 768px) {
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+nav .logo {
+    width: 80px;
+}
+.hogardetransito h2{
+    font-size: 30px;
+
+}
+.hogardetransito p{
+    font-size: 25px;
+}
+.requisitos{
+    font-size: 20px;
+    text-align: center;
+}
+.donacion{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 25px ;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+}
