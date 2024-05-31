@@ -8,6 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <meta property="og:image" content="../images/perro_acostado.jpg">
+    <meta property="og:image:alt" content="Perro sonriente sobre la arena">
+
     <!-- Styles -->
     <link rel="stylesheet" href="../CSS/cuidado_animal_styles.css">
     <link rel="icon" type="image/png" href="../images/favicon.png">
@@ -15,58 +22,83 @@
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html">
-            <img class="logo" src="../images/logo_vector.svg" alt="logo de Comodoro Animal">
-        </a>
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="../pages/cuidado_animal.html">Cuidado Animal</a>
-            </li>
-            <li>
-                <a href="../pages/ayudar.html">Ayudar</a>
-            </li>
-            <li>
-                <a href="../contacto.html">Contacto</a>
-            </li>
-        </ul>
-        <a class="button bg_orange" href="../pages/adoptar.html">Adoptar</a>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a href="../index.html">
+                <img class="logo" src="../images/logo_vector.svg" alt="logo de Comodoro Animal">
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Peludos urbanos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="link-nav" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link-nav active" href="../pages/cuidado_animal.html">Cuidado Animal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link-nav" href="../pages/ayudar.html">Ayudar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link-nav" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-buttons">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="button bg_orange" href="../pages/adoptar.html">Adoptar</a>
+            </div>
+        </div>
     </nav>
+
     <header class="hero-cuidado-animal">
         <h1>Cuidado Animal</h1>
     </header>
 
     <main>
-        <section class="castración">
+        <section>
             <h2>ESTERILIZACIÓN CANINA Y FELINA</h2>
-            <div class="imagen">
-                <img src="../images/castración 1.jpg" alt="Veterinarias con un gato en trailer de esterilización">
-            </div>
-            <article>
-                <p>
-                    En el 2021 se aprobó la ordenanza municipal de castración en Comodoro Rivadavia, que incluye
-                    servicios
-                    de clínica veterinaria, vacunación y desparasitación.
-                </p>
-                <p>
-                    La castración y desparasitación se presta en el domicilio si hay 10 o más animales sin castrar, y el
-                    municipio también proporciona la vacunación antirrábica anual de forma gratuita y obligatoria. 
-                </p>
-                <p>
-
-                    Enterate dónde está el trailer de esterilización en la página de Facebook de la Municipalidad. Los
-                    turnos se sacan vía web y se otorgan turnos 150 por día.
-                </p>
-            </article>
-            <div class="botones">
-                <div class="button bg_orange">
-                    <a target="_blank" href="https://www.comodoroweb.gob.ar/ords/f?p=152:29:::NO:RP,29::">Sacar
-                        turno</a>
+            <div class="contenedor-2">
+                <div class="imagen">
+                    <img src="../images/castración 1.jpg" alt="Veterinarias con un gato en trailer de esterilización">
+                    <p class="pie_de_imagen">Trailer de esterilización</p>
                 </div>
+                <article class="articulo">
+                    <p>
+                        En el 2021 se aprobó la ordenanza municipal de castración en Comodoro Rivadavia, que incluye
+                        servicios
+                        de clínica veterinaria, vacunación y desparasitación.
+                    </p>
+                    <p>
+                        La castración y desparasitación se presta en el domicilio si hay 10 o más animales sin castrar,
+                        y el
+                        municipio también proporciona la vacunación antirrábica anual de forma gratuita y obligatoria. 
+                    </p>
+                    <p>
+
+                        Enterate dónde está el trailer de esterilización en la página de Facebook de la Municipalidad.
+                        Los
+                        turnos se sacan vía web y se otorgan turnos 150 por día.
+                    </p>
+
+                    <div class="botones">
+                        <div class="button bg_orange">
+                            <a target="_blank" href="https://www.comodoroweb.gob.ar/ords/f?p=152:29:::NO:RP,29::">Sacar
+                                turno</a>
+                        </div>
+                    </div>
+                </article>
             </div>
+
 
             <div class="listaRequisitos">
                 <h3>👉 REQUISITOS:</h3>
@@ -94,15 +126,14 @@
             </div>
         </section>
 
-        <section class="castración">
+        <section>
             <h2>¿POR QUÉ ES IMPORTANTE CASTRAR?</h2>
             <div class="contenedor">
                 <div class="imagen">
                     <img src="../images/perro_exterior_3.jpg" alt="perro en el exterior de frente">
                 </div>
                 <article class="articulo">
-                    <h3>CASTRAR</h3>
-                    <h4>salva vidas ❤️</h4>
+                    <h3>Castrar, salva vidas ❤️</h3>
                     <p>Comodoro se enfrenta a una sobrepoblación alarmante de animales de compañía, con más perros y
                         gatos
                         que hogares disponibles para adoptarlos. Esta situación tiene consecuencias dramáticas:
@@ -161,7 +192,11 @@
         </div>
         </div>
     </footer>
-
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
