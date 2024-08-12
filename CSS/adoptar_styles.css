@@ -201,6 +201,24 @@ img{
     transform: scale(1.1);
 }
 
+#test-elegir-animal {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#test-elegir-animal label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#resultados {
+    margin-top: 20px;
+}
+
+
 footer {
     background: #C0BEAF;
     display: flex;

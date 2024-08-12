@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: "Montserrat", sans-serif;
+background-color: #F6F5F4;
+}
+
+
+ul {
+list-style-type: none;
+}
+
+a {
+text-decoration: none;
+color: #0F131A;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.32px;
+text-align: center;
+}
+
+h2 {
+margin: 16px 0px;
+}
+
+h4{
+text-align: center;
+padding: 8px;
+}
+
+img {
+width: 100%;
+border-radius: 8px
+}
+
+span {
+font-weight: 600;
+}
+
+.navbar {
+display: flex;
+background-color: rgba(246, 245, 244);
+width: 100%;
+height: auto;
+padding: 1rem;
+position: fixed;
+top: 0;
+left: 0;
+}
+
+nav ul {
+display: flex;
+flex-direction: column;
+}
+
+nav ul li {
+padding: 8px;
+}
+
+nav ul a:hover {
+color: #FF6C3F;
+}
+
+.link-nav {
+position: relative;
+}
+
+.link-nav:hover, .link-nav.active {
+color: #FF6C3F;
+}
+
+nav .logo {
+width: 50px;
+}
+
+.navbar-toggler{
+border: none;
+}
+
+button.navbar-toggler:focus, .btn-close:focus {
+box-shadow: none;
+outline: none;
+}
+
+.nav-item .active {
+color: #FF6C3F;
+}
+
+.navbar-buttons{
+display: flex;
+flex-direction: row-reverse;
+}
+
+.button {
+border-radius: 25.899px;
+padding: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.bg_orange{
+background: rgb(255, 108, 64);
+}
+
+.bg_grey{
+background: #A3A78E;
+}
+
+.bg_orange:hover {
+background-color: rgb(255, 108, 63, 0.5);
+outline: 1px solid #FF6C3F;
+color: #FF6C3F;
+}
+
+.bg_grey:hover {
+background-color: rgb(163, 167, 142, 0.3);
+outline: 1px solid #A3A78E;
+}
+
+
+
+
+footer {
+    background: #C0BEAF;
+    display: flex;
+    width: 100%;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .logo {
+    width: 100px;
+}
+
+.footer-column {
+    text-align: center;
+    padding: 16px;
+    font-weight: 600;
+}
+
+.links-utilidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 16px;
+    text-align: center;
+}
+
+
+
+/* Estilos tablet horizontal y escritorio */
+
+@media (min-width: 768px) {
+    nav ul {
+        gap: 24px;
+    }
+
+    nav .logo {
+        width: 80px;
+    }
+
+    .link-nav:hover::before,
+    .link-nav .active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+    .link-nav::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #FF6C3F;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .footer-column {
+        text-align: left;
+    }
+
+}
