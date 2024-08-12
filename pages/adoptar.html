@@ -168,6 +168,31 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
                 </div>
             </div>
         </section>
+
+
+        <form id="test-elegir-animal">
+            <h2>Encuentra el animal perfecto para ti</h2>
+            
+            <label for="horas-casa">¿Cuántas horas al día estás en casa?</label>
+            <input type="radio" name="horas-casa" value="menos de 4"> Menos de 4 horas
+            <input type="radio" name="horas-casa" value="4-8"> 4-8 horas
+            <input type="radio" name="horas-casa" value="más de 8"> Más de 8 horas
+            
+            <label for="tipo-animal">¿Qué tipo de animal estás buscando?</label>
+            <input type="radio" name="tipo-animal" value="perro"> Perro
+            <input type="radio" name="tipo-animal" value="gato"> Gato
+            <input type="radio" name="tipo-animal" value="otro"> Otro
+            
+            <label for="edad-animal">¿Qué edad prefieres para el animal?</label>
+            <input type="radio" name="edad-animal" value="cachorro"> Cachorro
+            <input type="radio" name="edad-animal" value="adulto"> Adulto
+            <input type="radio" name="edad-animal" value="anciano"> Anciano
+            
+            <button type="submit">Buscar Animal</button>
+        </form>
+        <div id="resultados"></div>
+        
+        
     </main>
 
     <footer>
@@ -178,16 +203,16 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
             <div class="footer-column">
                 <ul>
                     <li>
-                        <a href="./pages/contacto.html">Contactos útiles</a>
+                        <a href="../pages/contacto.html">Contactos útiles</a>
                     </li>
                     <li>
-                        <a href="./pages/ayudar.html">¿Cómo ayudar?</a>
+                        <a href="../pages/ayudar.html">¿Cómo ayudar?</a>
                     </li>
                     <li>
-                        <a href="./pages/cuidado_animal.html">Castración gratuita</a>
+                        <a href="../pages/cuidado_animal.html">Castración gratuita</a>
                     </li>
                     <li>
-                        <a href="./pages/cuidado_animal.html">Clínicas veterinarias</a>
+                        <a href="../pages/cuidado_animal.html">Clínicas veterinarias</a>
                     </li>
                 </ul>
             </div>
@@ -214,6 +239,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="../JS/adoptar.js"></script>
 </body>
 
 </html>
