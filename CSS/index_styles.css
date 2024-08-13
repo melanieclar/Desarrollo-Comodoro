@@ -261,6 +261,78 @@ footer .logo {
     text-align: center;
 }
 
+.contenedor-formulario {
+    background: #EAEAE9;
+    padding: 24px;
+    margin-top: 80px;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #C0BEAF;
+    font-family: "Montserrat", sans-serif;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #FF6C3F;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 108, 63, 0.5);
+    outline: 1px solid #FF6C3F;
+    color: #FF6C3F;
+}
+
+.feedback {
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.feedback.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.feedback.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.loading {
+    padding: 10px;
+    font-size: 16px;
+    color: #007bff;
+}
+
+
 /* Estilos tablet horizontal y escritorio */
 
 @media (min-width: 768px) {
@@ -326,4 +398,15 @@ footer .logo {
         text-align: left;
     }
 
+    .contenedor-formulario {
+        padding: 32px;
+    }
+
+    form {
+        gap: 24px;
+    }
+
+    input, textarea {
+        padding: 16px;
+    }
 }
